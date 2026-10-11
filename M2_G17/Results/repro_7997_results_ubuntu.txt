@@ -1,0 +1,14 @@
+GNU Radio 3.10.9.2  |  timeout 30s per case
+
+OK     stock_no_channel                6.3s  packets_decoded=248 packets_correct=248 still-running
+OK     stock_channel_eps1              6.4s  packets_decoded=248 packets_correct=248 still-running
+OK     stock_channel_eps1.0001         6.4s  packets_decoded=247 packets_correct=247 still-running
+OK     stock_channel_tags_pass         6.4s  packets_decoded=248 packets_correct=248 still-running
+OK     stock_channel_same_key          6.4s  packets_decoded=247 packets_correct=247 still-running
+STALL  stock_nochan_same_key           6.5s  packets_decoded=0 packets_correct=0 STALLED  | Buffer too small for min_noutput_items
+STALL  stock_chan_tagspass_same_key    6.3s  packets_decoded=0 packets_correct=0 STALLED  | Buffer too small for min_noutput_items
+OK     custom_no_channel               0.3s  vectors_out=2000 vectors_in=2000
+OK     custom_channel_eps1             0.3s  vectors_out=1999 vectors_in=2000
+OK     custom_channel_eps1.0001        0.4s  vectors_out=1999 vectors_in=2000
+HANG   fragile_no_channel             30.0s  no completion within 30s
+HANG   fragile_channel_eps1           30.0s  no completion within 30s
